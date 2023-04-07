@@ -1,0 +1,82 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    max-width: 400px;
+    min-height: 500px;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    background: linear-gradient(to bottom, #ffe7c7, #ff9a9e);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .container input {
+    border: 3px solid #ffa5a5;
+    width: 100%;
+    height: 100px;
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: right;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+  .container button {
+    width: 20%;
+    margin: 5px;
+    height: 60px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: #ff8585;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .container button:hover {
+    background-color: #ff5f5f;
+  }
+  
+  .container .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .container .row:last-child {
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      max-width: 90%;
+      min-height: 400px;
+    }
+  
+    .container button {
+      font-size: 1.2rem;
+      height: 50px;
+    }
+  
+    .container input {
+      font-size: 2rem;
+      height: 80px;
+    }
+  }
+  
